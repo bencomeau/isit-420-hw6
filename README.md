@@ -51,9 +51,10 @@ id
 trend (weak, strong)
 ```
 
-## Possible Queries
-We don’t have a ton of options since our data set isn’t massive. But I think we can come up with three. Something like:
+## Queries
+We don’t have a ton of options since our data set isn’t massive:
 
-1. We will get the unemployment rate reports for the last five years and overlay the opening and closing values of the DOW Jones Industrial Average for each report’s release date. This will allow one to determine if the unemployment rate affects the DOW and if so, positively or negatively.
+1. We will get the unemployment rate reports for the last `n` years and overlay the opening and closing values of the DOW Jones Industrial Average for each report’s release date. This will allow one to determine if the unemployment rate affects the DOW and if so, positively or negatively.
+  - User input: `<select name="year"><option value="2015">2015</option></select>`. 
 2. We will get all the weak Average Directional Index instances then using the date reference, get the unemployment rate for each of the weak reports. Doing this will allow us to determine if a weak Average Directional Index is followed by a relative-high or relative-low unemployment rate.
 3. Lastly, we will find all the strong Average Directional Index instances and using the date reference, get the unemployment rate for each of the strong reports. We will be able to gather whether the strong ADX reflects in the unemployment rate data.
